@@ -1,3 +1,23 @@
+@import '../../constants/variables.scss';
+
 .main {
-    font-size: 50px;
+    // flex properties
+    display: flex;
+    flex-direction: column;
+    
+    // dimensions
+    height: 25%;
+    width: 100%;
+
+    // styling
+}
+
+.title {
+    // flex properties
+    align-self: center;
+
+    // styling
+    font-family: $original-font-family;
+    font-size: $title-font-size;
+    color: #FFFFFF;
 }
