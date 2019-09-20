@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from 'react';
+import './home.scss';
+import ContentPane from '../src/components/ContentPane/contentPane';
+import Footer from '../src/components/Footer/footer';
 import Header from '../src/components/Header/header';
+import NavigationBar from '../src/components/NavigationBar/NavigationBar';
 
 const Home = () => {
   return (
-    <div>
+    <div className="homeMain">
       <Header />
-      <style jsx global>{`
-        body {
-          background: #000;
-          margin: 0;
-        }`
-      }</style>
+      <NavigationBar />
+      <ContentPane order="primary"/>
+      <ContentPane order="secondary"/>
+      <ContentPane order="primary"/>
+      <ContentPane order="secondary"/>
+      <ContentPane order="primary"/>
+      <Footer />
     </div>
   )
 };

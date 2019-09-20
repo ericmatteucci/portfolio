@@ -1,15 +1,20 @@
 import React from 'react';
-import Typist from 'react-typist';
 import './header.scss';
+import Typist from 'react-typist';
 
 type HeaderPropTypes = {};
 
 class Header extends React.Component<HeaderPropTypes> {
   render() {
     return (
-      <div className="main">
-        <Typist className="title">
-                    Eric Matteucci
+      <div className="headerMain">
+        <Typist
+          className="title"
+          stdTypingDelay={25}
+          avgTypingDelay={110}
+          cursor={{"hideWhenDone": true}}
+        >
+          <div>Eric Matteucci</div>
         </Typist>
       </div>
     );

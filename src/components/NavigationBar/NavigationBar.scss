@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+@import '../../styles/themes.scss';
+
+.navigationBarMain {
+    // flex properties
+    display: flex;
+    flex-direction: column;
+
+    // position
+    position: sticky;
+    z-index: $sticky-item-z-index;
+    top: 0;
+    
+    // dimensions
+    height: 10vmin;
+
+    padding: 1%;
+
+    // styling
+    @include themify($themes) {
+        background: themed('navigationBarColor');  
+    }
+}

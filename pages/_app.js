@@ -3,6 +3,8 @@ import App from 'next/app'
 import withRedux from 'next-redux-wrapper';
 import initializeStore from '../src/reducers';
 import 'regenerator-runtime/runtime';
+import './app.scss';
+import '../src/styles/themes.scss';
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
@@ -19,7 +21,11 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps } = this.props
-    return <Component {...pageProps} />
+    return (
+      <div className="theme-dark">
+        <Component {...pageProps} />
+      </div>
+      );
   }
 }
 

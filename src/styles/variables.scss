@@ -1,0 +1,33 @@
+/**
+* These are variables used to define the scss elements in the application.
+*/
+
+
+/**
+* Typography
+*/
+
+// sizes
+$title-font-size: 10vmin;
+$large-font-size: 8vmin;
+$medium-font-size: 6vmin;
+$medium-font-size: 4vmin;
+
+// fonts
+$console-font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+$verdana-font-family: Verdana, Geneva, sans-serif;
+
+$original-font-family: $verdana-font-family;
+
+/**
+* Layout
+*/
+$main-item-z-index: 50;
+$sticky-item-z-index: 100;
+
+/**
+* Colour Schemes
+*/
+$original-colour-background: #818281;
+$original-colour-header: #2a2b2a;
+

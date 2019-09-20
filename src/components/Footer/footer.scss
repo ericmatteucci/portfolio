@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+@import '../../styles/themes.scss';
+
+.footerMain {
+    // flex properties
+    display: flex;
+    flex-direction: column;
+    
+    // position
+    position: relative;
+    z-index: $main-item-z-index;
+    
+    // dimensions
+    height: 20vmin;
+
+    padding: 1%;
+
+    // styling
+    @include themify($themes) {
+        background: themed('footerColor');  
+    }
+}

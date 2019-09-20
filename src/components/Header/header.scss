@@ -1,23 +1,41 @@
-@import '../../constants/variables.scss';
+@import '../../styles/variables.scss';
+@import '../../styles/themes.scss';
 
-.main {
+.headerMain {
     // flex properties
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     
+    // position
+    position: relative;
+    z-index: $main-item-z-index;
+
     // dimensions
-    height: 25%;
-    width: 100%;
+    height: 30vmin;
+
+    padding: 1%;
 
     // styling
+    @include themify($themes) {
+        background: themed('headerColor');  
+    }
 }
 
 .title {
     // flex properties
-    align-self: center;
 
     // styling
-    font-family: $original-font-family;
+    font-family: $console-font-family;
     font-size: $title-font-size;
     color: #FFFFFF;
+}
+
+.skill {
+    // flex properties
+
+    // styling
+    font-family: $console-font-family;
+    font-size: $medium-font-size;
+    color: #0FF7FF;
 }
